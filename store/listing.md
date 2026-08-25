@@ -19,14 +19,15 @@ PageReel captures the *entire* page — not just what fits on your screen. One c
 
 **Why PageReel**
 - True full-page capture — long articles, pricing pages, dashboards, chat threads, entire documentation sites, all in one image.
-- Sticky headers and floating chat widgets are automatically hidden during capture, so you don't get the same navbar repeated ten times down your screenshot.
+- The top of the page is captured exactly as you see it; sticky headers and floating widgets are then kept out of every frame below it, so you don't get the same navbar repeated ten times down your screenshot.
 - A quiet on-page progress indicator shows exactly what's happening, with a one-click cancel if you change your mind.
+- A keyboard shortcut (⌘⇧U / Ctrl+Shift+U, customizable) starts a capture without opening any menu.
 - Adjustable capture speed: Fast for simple pages, Thorough for pages with lazy-loaded images or animations.
-- Nothing leaves your computer. No accounts, no cloud upload, no tracking — the image is built entirely on your device.
+- Nothing leaves your computer. No accounts, no cloud upload, no tracking — the image is built entirely on your device, at your screen's full native resolution.
 
 **How it works**
 1. Open the page you want to capture.
-2. Click the PageReel icon and press "Capture full page."
+2. Click the PageReel icon (or press ⌘⇧U) and press "Capture full page."
 3. Watch the progress bar as PageReel scrolls and captures.
 4. Find your screenshot in Downloads, named after the site and timestamp.
 
@@ -34,9 +35,9 @@ PageReel captures the *entire* page — not just what fits on your screen. One c
 Bug reports and QA documentation, saving long articles or receipts, archiving web pages, design reviews, sharing full page context with teammates, and portfolio/case-study screenshots.
 
 **Permissions, plainly explained**
-PageReel only acts on the tab you explicitly click it on (`activeTab`), never runs in the background, and never sends any data anywhere. See the full privacy policy: <PRIVACY_POLICY_URL>
+PageReel only acts on the tab you explicitly click it on (`activeTab`), never runs in the background, and never sends any data anywhere. See the full privacy policy: https://mehmetdemirkok.github.io/pagereel/store/privacy-policy.html
 
-Keywords: full page screenshot, scrolling screenshot, capture entire page, webpage screenshot, long screenshot, screen capture extension, page to image, save whole page.
+Keywords: full page screenshot, full page screenshot chrome extension, scrolling screenshot, capture entire page, webpage screenshot, long screenshot, screen capture extension, website screenshot tool, page to image, save whole page, screenshot entire webpage, capture full website, download webpage as image.
 
 ## Single purpose description (Chrome Web Store "Privacy practices" tab)
 PageReel's single purpose is to capture a full-length screenshot of the currently active browser tab by scrolling the page and stitching the captured frames into one image file, saved locally.
@@ -57,4 +58,4 @@ None of the listed data categories are collected. PageReel does not collect pers
 - [ ] At least one screenshot, 1280x800 or 640x400 px (see `store/promo/`)
 - [ ] Small promo tile, 440x280 px (optional but recommended)
 - [ ] Marquee promo tile, 1400x560 px (optional)
-- [x] Privacy policy page — `store/privacy-policy.html` (must be hosted at a public URL for the dashboard field — see README)
+- [x] Privacy policy page — hosted and live at https://mehmetdemirkok.github.io/pagereel/store/privacy-policy.html

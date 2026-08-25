@@ -1,16 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7c9bff"/>
-      <stop offset="1" stop-color="#8f6cff"/>
+      <stop offset="0" stop-color="#6E8CFF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
     </linearGradient>
   </defs>
   <rect width="440" height="280" fill="url(#g)"/>
-  <g transform="translate(36,54)">
-    <rect x="0" y="0" width="88" height="68" rx="12" fill="#ffffff" opacity="0.5"/>
-    <rect x="14" y="26" width="88" height="68" rx="12" fill="#ffffff" opacity="0.78"/>
-    <rect x="6" y="52" width="88" height="68" rx="12" fill="#ffffff"/>
+
+  <g transform="translate(34,44) scale(0.62)">
+    <rect x="30" y="26" width="60" height="46" rx="9" fill="#ffffff" opacity="0.5" transform="rotate(-7 60 49)"/>
+    <rect x="24" y="40" width="68" height="50" rx="10" fill="#ffffff"/>
+    <path d="M58 54v20M58 74l-10-10M58 74l10-10" stroke="#7C5CE0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   </g>
-  <text x="36" y="210" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="34" font-weight="700" fill="#ffffff">PageReel</text>
-  <text x="36" y="240" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="16" fill="#f0f0ff">Full page screenshots, one click.</text>
+
+  <text x="36" y="210" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+    <tspan fill="#ffffff">Page</tspan><tspan fill="#ffffff" opacity="0.72">Reel</tspan>
+  </text>
+  <text x="36" y="240" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="16" fill="#f0eefd">Full page screenshots, one click.</text>
 </svg>
