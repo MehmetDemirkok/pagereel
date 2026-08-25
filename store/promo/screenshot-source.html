@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  body { background: #3a3650; }
+  .stage {
+    position: relative;
+    width: 1280px; height: 800px;
+    overflow: hidden;
+    background: #EDEBF3;
+  }
+
+  /* --- mock browser chrome --- */
+  .chrome {
+    height: 88px;
+    background: #E4E2EC;
+    border-bottom: 1px solid rgba(20,15,40,0.08);
+    display: flex;
+    flex-direction: column;
+  }
+  .tabs { display: flex; align-items: flex-end; padding: 10px 16px 0; gap: 4px; }
+  .tab {
+    width: 220px; height: 32px; background: #F7F6FB; border-radius: 10px 10px 0 0;
+    display: flex; align-items: center; gap: 8px; padding: 0 12px;
+    color: #4a4560; font-size: 12px;
+  }
+  .tab .dot { width: 8px; height: 8px; border-radius: 50%; background: #6E8CFF; flex: none; }
+  .bar {
+    height: 44px; background: #F7F6FB; display: flex; align-items: center;
+    padding: 0 16px; gap: 12px;
+  }
+  .traffic { display: flex; gap: 8px; }
+  .traffic span { width: 12px; height: 12px; border-radius: 50%; display: block; }
+  .traffic span:nth-child(1) { background: #FF5F57; }
+  .traffic span:nth-child(2) { background: #FEBC2E; }
+  .traffic span:nth-child(3) { background: #28C840; }
+  .address {
+    flex: 1; max-width: 640px; height: 28px; background: #EDEBF3; border-radius: 999px;
+    display: flex; align-items: center; padding: 0 14px; color: #6B6785; font-size: 12px; gap: 8px;
+  }
+  .toolbar-icons { display: flex; align-items: center; gap: 14px; margin-left: auto; }
+  .toolbar-icons .ghost { width: 20px; height: 20px; border-radius: 5px; background: #D6D3E2; }
+  .ext-icon {
+    width: 30px; height: 30px; border-radius: 9px;
+    background: linear-gradient(135deg, #6E8CFF, #8B5CF6);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 0 5px rgba(139,92,246,0.16);
+  }
+  .ext-icon svg { width: 16px; height: 16px; }
+
+  /* --- generic placeholder page behind the popup --- */
+  .page { padding: 64px 96px; }
+  .ph-title { width: 420px; height: 26px; border-radius: 6px; background: #D9D6E6; margin-bottom: 16px; }
+  .ph-line { height: 12px; border-radius: 6px; background: #E2E0EC; margin-bottom: 10px; }
+  .ph-line.w1 { width: 620px; }
+  .ph-line.w2 { width: 560px; }
+  .ph-line.w3 { width: 480px; }
+  .ph-cards { display: flex; gap: 20px; margin-top: 36px; }
+  .ph-card { width: 220px; height: 140px; border-radius: 14px; background: #E2E0EC; }
+
+  /* --- popup dropdown --- */
+  .popup-frame {
+    position: absolute;
+    top: 92px; right: 150px;
+    width: 320px;
+    border-radius: 16px;
+    box-shadow: 0 24px 60px -12px rgba(20,15,50,0.35), 0 0 0 1px rgba(20,15,50,0.06);
+    overflow: hidden;
+  }
+  .popup-frame iframe { display: block; width: 320px; height: 452px; border: none; }
+  .caret {
+    position: absolute; top: 78px; right: 158px;
+    width: 16px; height: 16px; background: #14131C; transform: rotate(45deg);
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="chrome">
+    <div class="tabs">
+      <div class="tab"><span class="dot"></span>New Tab</div>
+    </div>
+    <div class="bar">
+      <div class="traffic"><span></span><span></span><span></span></div>
+      <div class="address">🔒 example.com/blog/a-really-long-article</div>
+      <div class="toolbar-icons">
+        <div class="ghost"></div>
+        <div class="ghost"></div>
+        <div class="ext-icon">
+          <svg viewBox="0 0 128 128" fill="none"><path d="M64 32v42M64 78l-20-20M64 78l20-20" stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="ph-title"></div>
+    <div class="ph-line w1"></div>
+    <div class="ph-line w2"></div>
+    <div class="ph-line w3"></div>
+    <div class="ph-cards">
+      <div class="ph-card"></div>
+      <div class="ph-card"></div>
+      <div class="ph-card"></div>
+    </div>
+  </div>
+
+  <div class="caret"></div>
+  <div class="popup-frame">
+    <iframe src="../../src/popup/popup.html"></iframe>
+  </div>
+</div>
+</body>
+</html>

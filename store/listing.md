@@ -55,7 +55,7 @@ None of the listed data categories are collected. PageReel does not collect pers
 
 ## Assets checklist
 - [x] Icons: 16/32/48/128 px — `icons/icon16.png` … `icons/icon128.png`
-- [ ] At least one screenshot, 1280x800 or 640x400 px (see `store/promo/`)
+- [x] Screenshot, exactly 1280x800 px — `store/promo/popup-preview.png`
 - [ ] Small promo tile, 440x280 px (optional but recommended)
 - [ ] Marquee promo tile, 1400x560 px (optional)
 - [x] Privacy policy page — hosted and live at https://mehmetdemirkok.github.io/pagereel/store/privacy-policy.html
