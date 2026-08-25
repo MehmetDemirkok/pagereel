@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>PageReel</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="brand">
+    <span class="mark"><img src="../../icons/icon32.png" alt="" width="28" height="28" /></span>
+    <div class="brand-text">
+      <p class="wordmark">Page<span>Reel</span></p>
+      <p class="tagline">Full-page capture, one click.</p>
+    </div>
+  </header>
+
+  <div class="cta-stack">
+    <button id="capture-btn" class="primary" type="button">
+      <svg class="btn-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M10 3.5v10.5M10 14l-4-4M10 14l4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="3.5" y="16.5" width="13" height="1.6" rx="0.8" fill="currentColor"/>
+      </svg>
+      <span id="btn-label">Capture full page</span>
+    </button>
+  </div>
+
+  <p class="shortcut-hint">
+    <kbd id="shortcut-keys">…</kbd>
+    <button id="shortcut-edit" type="button">Change</button>
+  </p>
+
+  <div id="inline-msg" class="inline-msg" hidden></div>
+
+  <fieldset class="quality">
+    <legend>Speed</legend>
+    <div class="segmented">
+      <input type="radio" name="speed" id="speed-thorough" value="thorough" checked />
+      <label for="speed-thorough">Thorough</label>
+      <input type="radio" name="speed" id="speed-fast" value="fast" />
+      <label for="speed-fast">Fast</label>
+    </div>
+    <p class="quality-hint" id="quality-hint">Waits longer for lazy-loaded content — most reliable.</p>
+  </fieldset>
+
+  <footer>
+    <a id="privacy-link" href="#">Privacy</a>
+    <span class="dot">·</span>
+    <span class="version" id="version-label"></span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

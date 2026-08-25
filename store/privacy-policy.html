@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PageReel — Privacy Policy</title>
+<style>
+  body { max-width: 640px; margin: 48px auto; padding: 0 20px; font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #17171e; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 16px; margin-top: 32px; }
+  code { background: #f2f2f5; padding: 1px 5px; border-radius: 4px; }
+  footer { margin-top: 48px; color: #6b7280; font-size: 13px; }
+</style>
+</head>
+<body>
+  <h1>PageReel — Privacy Policy</h1>
+  <p><em>Last updated: August 25, 2026</em></p>
+
+  <p>PageReel is a Chrome extension that captures a full, scrolling screenshot of the webpage you are currently viewing. This policy explains exactly what the extension does and does not do with your data.</p>
+
+  <h2>What PageReel does</h2>
+  <p>When you click "Capture full page," PageReel scrolls the active tab, takes a series of screenshots using Chrome's built-in <code>captureVisibleTab</code> API, stitches them into a single PNG image entirely on your device, and saves that file to your Downloads folder.</p>
+
+  <h2>What PageReel does not do</h2>
+  <ul>
+    <li>It does not collect, transmit, or store the content of any page you capture.</li>
+    <li>It has no backend server. No page content, screenshot, or browsing data ever leaves your computer.</li>
+    <li>It does not use analytics, telemetry, or third-party trackers.</li>
+    <li>It does not sell or share data, because none is collected.</li>
+  </ul>
+
+  <h2>Permissions PageReel requests, and why</h2>
+  <ul>
+    <li><strong>activeTab / scripting</strong> — to read the page's dimensions, scroll it, and draw the temporary progress overlay, only on the tab you actively invoke the extension on.</li>
+    <li><strong>downloads</strong> — to save the finished screenshot to your Downloads folder.</li>
+    <li><strong>offscreen</strong> — to stitch the captured tiles into one image using a canvas, which isn't available inside the extension's background service worker.</li>
+    <li><strong>storage</strong> — to remember your preferred capture quality setting (Fast/Balanced/Thorough) locally on your device.</li>
+  </ul>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "Last updated" date above will change accordingly.</p>
+
+  <footer>
+    Questions? Contact <a href="mailto:mehmetdemirkok@gmail.com">mehmetdemirkok@gmail.com</a>.
+  </footer>
+</body>
+</html>
